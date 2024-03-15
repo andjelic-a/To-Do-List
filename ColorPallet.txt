@@ -1,0 +1,20 @@
+Main color:
+-#287AEA
+-lightest #79ABF0
+-lighter #4F91ED
+-darker #0D67E4
+-darkest #064AA7
+
+Secoundary color:
+1) Blue
+-#4B31EC
+-lightest #9080F2
+-lighter #6C57EF
+-darker #3013E7
+-darkest #2009B0
+2) Green
+-#15E9BA
+-lightest #6EF0D3
+-lighter #40ECC6
+-darker #00E3B0
+-darkest #00A47F
