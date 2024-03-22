@@ -1,5 +1,4 @@
-//OnHover
-let addButton = document.querySelector('#add');
+//Creating input slot for Todo list
 function AddNewNote(){
-    alert('dasdd');
+    
 }

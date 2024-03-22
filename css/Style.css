@@ -10,7 +10,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
-    font-size: 18px;
+    font-size: 1.15rem;
     color: #6EF0D3;
 }
 #logo{
@@ -18,8 +18,8 @@ header{
     align-items: center;
 }
 #logo p{
-    padding-left: 15px;
-    font-size: 20px;
+    padding-left: 0.6em;
+    font-size: 1.4rem;
 }
 .logoImg{
     width: 50px;
@@ -63,23 +63,62 @@ nav ul li:hover::after{
     height: 88.8vh;
     background-color: #fff;
 }
-#todo{
+.output{
+    display: flex;
+    justify-content: center;
+    color: #6EF0D3;
     background-color: #064AA7;
-    width: 25%;
+    width: 27.5%;
     height: 80%;
     border-radius: 25px;
+}
+#todo{
+    text-align: center;
+    margin-top: 20px;
+    height: 10%;
+    width: 50%;
+    font-weight: lighter;
+}
+#todo::after{
+    content: '';
+    height: 2px;
+    width: 20%;
+    background-color: #6EF0D3;
+    position: absolute;
+    left: 8vw;
+    bottom: 71.5vh;
 }
 #inProgress{
-    background-color: #064AA7;
-    width: 25%;
-    height: 80%;
-    border-radius: 25px;
+    text-align: center;
+    margin-top: 20px;
+    height: 10%;
+    width: 50%;
+    font-weight: lighter;
+}
+#inProgress::after{
+    content: '';
+    height: 2px;
+    width: 20%;
+    background-color: #6EF0D3;
+    position: absolute;
+    left: 40vw;
+    bottom: 71.5vh;
 }
 #done{
-    background-color: #064AA7;
-    width: 25%;
-    height: 80%;
-    border-radius: 25px;
+    text-align: center;
+    margin-top: 20px;
+    height: 10%;
+    width: 50%;
+    font-weight: lighter;
+}
+#done::after{
+    content: '';
+    height: 2px;
+    width: 20%;
+    background-color: #6EF0D3;
+    position: absolute;
+    left: 72vw;
+    bottom: 71.5vh;
 }
 footer{
     display: flex;
@@ -91,7 +130,7 @@ footer{
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 #add:hover{
     width: 65px;
