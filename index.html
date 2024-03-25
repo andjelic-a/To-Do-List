@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="css/Style.css">
-    <script src="src/index.ts"></script>
+    <script src="dist/index.js"></script>
 </head>
 
 <body>
@@ -24,6 +24,7 @@
             </ul>
         </nav>
     </header>
+    <!--Home-->
     <section id="home">
         <div class="output">
             <h2 id="todo">Todo</h2>
@@ -35,8 +36,12 @@
             <h2 id="done">Done</h2>
         </div>
     </section>
+    <div class="popup" id="popup">
+        <input type="text">
+    </div>
+    <!--Footer-->
     <footer>
-        <img src="img/Plus icon.png" id="add" alt="Add" onclick="AddNewNote()">
+        <img src="img/Plus icon.png" id="add" alt="Add" onclick="TogglePopup()">
     </footer>
 </body>
 
