@@ -12,3 +12,17 @@ function TogglePopup() {
         num = 0;
     }
 }
+
+//Adding Note
+function AddNewNote(num: number){
+    let inputText = document.querySelector<HTMLInputElement>('.popup-input-text')?.value;
+    alert(inputText);
+    switch(num){
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3: 
+            break;
+    }
+}

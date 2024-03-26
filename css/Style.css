@@ -1,49 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-header{
+
+header {
     background-color: #064AA7;
     width: 100% - 50px;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
     font-size: 1.15rem;
     color: #6EF0D3;
-    z-index: 1;
+    z-index: 30;
 }
-#logo{
+
+#logo {
     display: flex;
     align-items: center;
 }
-#logo p{
+
+#logo p {
     padding-left: 0.6em;
     font-size: 1.4rem;
 }
-.logoImg{
+
+.logoImg {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     width: 100%;
     text-align: center;
 }
-nav ul li{
+
+nav ul li {
     position: relative;
     display: inline-block;
     margin: 10px 30px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #6EF0D3;
 }
-nav ul li::after{
+
+nav ul li::after {
     content: '';
     height: 3px;
     width: 0%;
@@ -53,10 +62,12 @@ nav ul li::after{
     bottom: -5px;
     transition: 0.5s;
 }
-nav ul li:hover::after{
+
+nav ul li:hover::after {
     width: 100%;
 }
-#home{
+
+#home {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -64,7 +75,8 @@ nav ul li:hover::after{
     height: 88.8vh;
     background-color: #fff;
 }
-.output{
+
+.output {
     display: flex;
     justify-content: center;
     color: #6EF0D3;
@@ -73,14 +85,16 @@ nav ul li:hover::after{
     height: 80%;
     border-radius: 25px;
 }
-#todo{
+
+#todo {
     text-align: center;
     margin-top: 20px;
     height: 10%;
     width: 50%;
     font-weight: lighter;
 }
-#todo::after{
+
+#todo::after {
     content: '';
     height: 2px;
     width: 20%;
@@ -89,14 +103,16 @@ nav ul li:hover::after{
     left: 8vw;
     bottom: 71.5vh;
 }
-#inProgress{
+
+#inProgress {
     text-align: center;
     margin-top: 20px;
     height: 10%;
     width: 50%;
     font-weight: lighter;
 }
-#inProgress::after{
+
+#inProgress::after {
     content: '';
     height: 2px;
     width: 20%;
@@ -105,14 +121,16 @@ nav ul li:hover::after{
     left: 40vw;
     bottom: 71.5vh;
 }
-#done{
+
+#done {
     text-align: center;
     margin-top: 20px;
     height: 10%;
     width: 50%;
     font-weight: lighter;
 }
-#done::after{
+
+#done::after {
     content: '';
     height: 2px;
     width: 20%;
@@ -121,10 +139,12 @@ nav ul li:hover::after{
     left: 72vw;
     bottom: 71.5vh;
 }
-footer{
+
+footer {
     display: flex;
 }
-#add{
+
+#add {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -133,11 +153,14 @@ footer{
     cursor: pointer;
     transition: 0.2s;
 }
-#add:hover{
+
+#add:hover {
     width: 65px;
     height: 65px;
 }
-.popup{
+
+.popup {
+    position: absolute;
     width: 400px;
     height: 200px;
     background-color: #064AA7;
@@ -149,9 +172,41 @@ footer{
     transform: translate(-50%, -50%) scale(0.1);
     visibility: visible;
     transition: transform 0.4s, top 0.4s;
+    z-index: 20;
 }
-.open-popup{
-    visibility:  visible;
+
+.popup-div-input-text {
+    display: flex;
+    width: 100%;
+    height: 17.5%;
+    justify-content: center;
+}
+
+.popup-input-text {
+    margin-top: 30px;
+    width: 75%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #6EF0D3;
+}
+
+.popup-div-input-buttons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-input-buttons {
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #6EF0D3;
+    cursor: pointer;
+}
+
+.open-popup {
+    visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.4s, top 0.4s;
